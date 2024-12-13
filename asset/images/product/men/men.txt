@@ -1,0 +1,68 @@
+<li class="card-item">
+<button type="button" name="button" class="btn-wish">
+<span class="blind">찜하기</span>
+</button>
+<a href="#">
+<div class="card-item__thumb"><img src="./asset/images/product/" alt></div>
+<div class="card-item__text">
+  <div class="card-item__text-title">
+    <div class="brand"></div>
+    <div class="front"></div>
+    <div class="product"></div>
+  </div>
+  <div class="card-item__price">
+    <span class="discount"></span>
+    <span class="original">78,000</span>
+    <span class="rate"></span>
+  </div>
+  <div class="card-item__tag">
+    <span class="tag">쿠폰</span>
+    <span class="tag">단독</span>
+  </div>
+</div>
+</a>
+</li>
+
+
+Dunst for MEN
+UNISEX LEATHER LOGO POLO SHIRT NAVY_M_UDTS4B122N2
+65,550
+69,000
+5%
+
+
+WEDNESDAY OASIS
+stone cago pocket banding shorts(4col)
+17,577
+27,900
+37%
+
+MINIMAL PROJECT
+로버스트 헤비 오버핏 반팔티셔츠 MST127 / 9color
+18,800
+35,800
+47%
+
+FLUKE
+플루크 버뮤다 데님 하프팬츠 FSP110 / 3color
+47,520
+85,000
+44%
+
+ADIDAS
+[24SS]
+[EG4959] SUPERSTAR
+139,000
+
+
+NIKE
+[SP24]
+[FZ3963-010] W NIKE ZOOM VOMERO 5 PRM
+219,000
+
+
+COVERNAT
+24SS_빈티지 로고 볼캡 블랙
+29,000
+39,000
+25%

@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>W CONCEPT</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./asset/images/favicon.ico" sizes="16x16">
+	<link rel="stylesheet" href="./asset/css/style.css">
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- script -->
+	<script src="./asset/js/main.js" defer></script>
+</head>
+
+<body>
+	<div id="skipNav">
+		<a href="#main">본문 내용 바로가기(Go to content)</a>
+		<a href="#actionbar">메인 메뉴 영역 바로가기(Go to main menu)</a>
+		<a href="#footer">하단 영역 바로가기(Go to footer)</a>
+	</div>
+	<div id="wrap">
+		<header class="header">
+			<div class="header__top">
+				<h1 class="logo">
+					<a href="#" class="logo__link">
+						<span class="blind">W CONCEPT</span>
+					</a>
+				</h1>
+				<div class="header__search">
+					<form action="" method="get" class="header__search-form">
+						<fieldset>
+							<legend class="blind">검색</legend>
+							<input type="text" class="header__search-input" />
+							<button type="submit" class="header__search-btn">
+								<span class="blind">검색 버튼</span>
+							</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="header__auth">
+					<ul class="header__auth-list">
+						<li class="header__auth-item">
+							<a href="#" class="header__auth-link--join">
+								<span>JOIN</span>
+							</a>
+						</li>
+						<li class="header__auth-item">
+							<a href="#" class="header__auth-link--login">
+								<span>LOGIN</span>
+							</a>
+						</li>
+						<li class="header__auth-item">
+							<button class="header__auth-link--search">
+								<span>SEARCH</span>
+							</button>
+						</li>
+						<li class="header__auth-item">
+							<a href="#" class="header__auth-link--heart">
+								<span>HEART</span>
+							</a>
+						</li>
+						<li class="header__auth-item">
+							<a href="#" class="header__auth-link--my">
+								<span>MY</span>
+							</a>
+						</li>
+						<li class="header__auth-item">
+							<a href="#" class="header__auth-link--cart" aria-label="장바구니">
+								<span>0</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav id="actionbar" class="header__nav">
+				<div class="inner">
+					<button type="button" class="header__nav-btn">
+						<span class="category">CATEGORY</span>
+						<i class="category__icon">
+							<span class="blind">Category</span>
+						</i>
+					</button>
+					<a href="/" class="symbol">
+						<img src="./asset/images/common/svg/ico_gnb_logo_W_52.svg" alt="w컨셉 미니로고">
+					</a>
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="" class="header__nav-link">WOMEN</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">MEN</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">BEAUTY</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">LIFE</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">KIDS</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">BEST</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">SALE</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">NEW</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">EXCLUSIVE</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">ORIGINAL</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">브랜드</a></li>
+						<li class="header__nav-item"><a href="" class="header__nav-link">기획전</a></li>
+					</ul>
+				</div>
+				<div class="header__nav-sub">
+					<div class="category">
+						<a href="#" class="category__link woman on" data-tab="#tab01">여성</a>
+						<div id="tab01" class="category__wrap active">
+							<div class="category__list-box"></div>
+							<ul class="category__list-banner">
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/01.jpg" alt>
+											<figcaption>LABEL</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/02.jpg" alt>
+											<figcaption>OUTLET</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/03.jpg" alt>
+											<figcaption>LUXURYZONE</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/04.jpg" alt>
+											<figcaption>CASUAL</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/05.jpg" alt>
+											<figcaption>ACTIVESHOP</figcaption>
+										</figure>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="category__link man" data-tab="#tab02">남성</a>
+						<div id="tab02" class="category__wrap">
+							<div class="category__list-box"></div>
+							<ul class="category__list-banner">
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/06.jpg" alt>
+											<figcaption>CASUAL</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/03.jpg" alt>
+											<figcaption>LUXURYZONE</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/05.jpg" alt>
+											<figcaption>ACTIVESHOP</figcaption>
+										</figure>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="category__link beauty" data-tab="#tab03">뷰티</a>
+						<div id="tab03" class="category__wrap">
+							<div class="category__list-box"></div>
+							<ul class="category__list-banner">
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/07.png" alt>
+											<figcaption>SSG BEAUTY</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="category__list-banner__item">
+									<a href="">
+										<figure class="category__list-banner--thumb">
+											<img src="./asset/images/category/08.jpg" alt>
+											<figcaption>CHICOR</figcaption>
+										</figure>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="category__link life" data-tab="#tab04">라이프</a>
+						<div id="tab04" class="category__wrap">
+							<div class="category__list-box"></div>
+						</div>
+						<a href="#" class="category__link kids" data-tab="#tab05">키즈</a>
+						<div id="tab05" class="category__wrap">
+							<div class="category__list-box"></div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<aside class="ad">
+				<a href="#"><img src="./asset/images/top_banner.jpg" alt="24FW 프리쇼 무제한 12% 쿠폰팩"></a>
+			</aside>
+		</header>
+		<main id="main">
+			<div class="inner">
+				<section class="sc-visual">
+					<div class="swiper visualSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/01.jpg" alt="W컨센 X 엔더슨벨 스웻셔츠 단독 발매 최대 20% 할인 + 7% 쿠폰">
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/02.jpg" alt>
+								<div class="group-text">
+									<em class="title">다양한 사랑의 감정</em>
+									<em class="title">SALON DE YOHN</em>
+									<span class="desc">FALL 단독 선오픈 최대 50%</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/03.jpg" alt="New Concept 8월의 신규 브랜드">
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/04.jpg" alt>
+								<div class="group-text">
+									<em class="title">가치에 대한 집중</em>
+									<em class="title">ANEDIT</em>
+									<span class="desc">단독 선오픈 최대 20% 세일</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/05.jpg" alt="New Season Shop 가을 카테고리 10% 쿠폰 + 쇼핑백 최대 15% 쿠폰 혜택">
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/06.jpg" alt>
+								<div class="group-text">
+									<em class="title">새로운 반스</em>
+									<em class="title">MTE Authentic</em>
+									<span class="desc">발매 기념 최대 60% 세일</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/07.jpg" alt="W STYLE 모델 유예린의 레이브 단독 캡슐컬렉션 스타일링 최대 15% 할인">
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/08.jpg" alt>
+								<div class="group-text">
+									<em class="title">기다려온 가을</em>
+									<em class="title">DRAWFIT WOMEN</em>
+									<span class="desc">24 FALL 최대 25% 세일</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/09.jpg" alt>
+								<div class="group-text">
+									<em class="title">사랑과 건강을 추구하는</em>
+									<em class="title">CENTAUR.KR</em>
+									<span class="desc">첫 컬렉션 24FW 단독 특가</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/10.jpg" alt>
+								<div class="group-text">
+									<em class="title">가장 먼저 만나는</em>
+									<em class="title">THE NORTH FACE</em>
+									<span class="desc">24FW 선오픈+베스트 아우터</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/11.jpg" alt>
+								<div class="group-text">
+									<em class="title">사랑스러운 키즈</em>
+									<em class="title">신상 모아보기</em>
+									<span class="desc">최대 85% 세일+15% 쿠폰</span>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<img src="./asset/images/slide/visual/12.jpg" alt>
+								<div class="group-text">
+									<em class="title">김세정과 함께한</em>
+									<em class="title">itMICHAA</em>
+									<span class="desc">24FW PT.2 선오픈 ~20%</span>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+						<button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+					</div>
+				</section>
+			</div>
+			<div class="ad-banner">
+				<a href="#">
+					<img src="./asset/images/banner-shopping.jpg" alt="쇼핑 리워드 구매할수록 커지는 혜택">
+				</a>
+				<a href="#">
+					<img src="./asset/images/banner-welcome.jpg" alt="WELCOME W CONCEPT 신규회원 스페셜 혜택 가이드">
+				</a>
+			</div>
+			<div class="inner">
+				<section class="sc-product">
+					<h2 class="blind">제품 영역</h2>
+					<div class="sc-product__yours">
+						<h3 class="headline">MAKE IT YOURS</h3>
+						<div class="swiper yoursSwiper">
+							<ul class="swiper-wrapper card-list">
+								<li class="swiper-slide card-item">
+									<a href="#">
+										<div class="card-item__thumb">
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+											<img src="./asset/images/slide/yours/01.jpg" alt>
+										</div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">ETTE</div>
+												<div class="front">[15%쿠폰][~9/10까지] | [24FW] | [1차: 08/29, 2차: 09/11 예약배송]</div>
+												<div class="product">[최실장 PICK][단독] FILO BAG_5 COLORS</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">272,800</span>
+												<span class="original">368,000</span>
+												<span class="rate">25%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<a href="#">
+										<div class="card-item__thumb">
+											<button type="button" name="button" class="btn-wish on">
+												<span class="blind">찜하기</span>
+											</button>
+											<img src="./asset/images/slide/yours/02.jpg" alt>
+										</div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">UMER</div>
+												<div class="front">[5%쿠폰] | [1차 : 11/07, 2차 : 11/29 예약배송]</div>
+												<div class="product">줄리아 브이 니트 (Grey)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">147,600</span>
+												<span class="original">164,000</span>
+												<span class="rate">10%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/03.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">UMER</div>
+												<div class="front">[5%쿠폰] | [셀럽착용] | [1차 : 10/31, 2차 : 11/29 예약배송]</div>
+												<div class="product">포이 블라우스 (Ivory)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">112,000</span>
+												<span class="original">118,000</span>
+												<span class="rate">5%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/04.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Atelier de LUMEN</div>
+												<div class="front">[한정특가][~8/28까지]</div>
+												<div class="product">[단독]Panier Petit Bag_6colors</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">196,200</span>
+												<span class="original">218,000</span>
+												<span class="rate">10%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">단독</span>
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/05.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">hardcore happiness</div>
+												<div class="front"></div>
+												<div class="product">웨이브 셔링 퍼프 블라우스 플라워_화이트</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">53,900</span>
+												<span class="original">77,000</span>
+												<span class="rate">30%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/06.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">UMER</div>
+												<div class="front">[5%쿠폰] | [셀럽착용] | [1차 : 09/20, 2차 : 10/31 예약배송]</div>
+												<div class="product">50 Jane Denim (Dark indigo)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">106,200</span>
+												<span class="original">118,000</span>
+												<span class="rate">10%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/07.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Atelier de LUMEN</div>
+												<div class="front">[15%쿠폰][최실장 PICK][단독]</div>
+												<div class="product">Panier Grand Bag_2colors</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">246,400</span>
+												<span class="original">300,000</span>
+												<span class="rate">20%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">단독</span>
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/08.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">RUHOUR</div>
+												<div class="front">[1차 : 09/06, 2차 : 09/25, 3차 : 09/30 예약배송]</div>
+												<div class="product">[단독] Rover panier bag - small / Camel brown</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">228,000</span>
+												<span class="original">258,000</span>
+												<span class="rate">11%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">단독</span>
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/09.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">lettera</div>
+												<div class="front"></div>
+												<div class="product">[단독][컬러추가] Basic Round Linen Cardigan</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">69,000</span>
+												<span class="original">46,575</span>
+												<span class="rate">32%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/slide/yours/10.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">UMER</div>
+												<div class="front"></div>
+												<div class="product">제인 코튼 부츠컷 팬츠 ( Cream )</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">114,300</span>
+												<span class="original">127,000</span>
+												<span class="rate">10%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-btn__wrap">
+							<button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+							<button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+						</div>
+					</div>
+					<div class="sc-product__beauty">
+						<h3 class="headline">beauty pick<a href="#" class="btn-plus"><span class="blind">더보기</span></a></h3>
+						<div class="sc-product__beauty-wrap">
+							<div class="swiper beautySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#">
+											<img src="./asset/images/slide/beauty/01.jpg" alt>
+											<div class="group-text">
+												<em class="title">AMUSE</em>
+												<p class="sub">일상에 기분 좋은 바이브, 어뮤즈</p>
+												<span class="desc">~82% 세일 & 사은품 증정</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#">
+											<img src="./asset/images/slide/beauty/02.jpg" alt>
+											<div class="group-text">
+												<em class="title">AMOREPACIFIC</em>
+												<p class="sub">BRAND WEEK</p>
+												<span class="desc">최대 32% 세일 + ~20% 쿠폰 & 사은품 증정</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#">
+											<img src="./asset/images/slide/beauty/03.jpg" alt>
+											<div class="group-text">
+												<em class="title">NEW & NEW</em>
+												<p class="sub">새롭게 만나보는 뉴 브랜드, 뉴 아이템</p>
+												<span class="desc">이번달 W컨셉을 찾아온 신상 & 신규 입점브랜드</span>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#">
+											<img src="./asset/images/slide/beauty/04.jpg" alt>
+											<div class="group-text">
+												<em class="title">dasique</em>
+												<p class="sub">당신만의 무드를 꽃 피워줄 Blooming - Mood</p>
+												<span class="desc">~70% 세일 & 사은품 증정</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-btn__wrap">
+									<button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+									<button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+								</div>
+							</div>
+							<ul class="card-list">
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/01.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Te'</div>
+												<div class="front">[뷰티특가]</div>
+												<div class="product">[본품+리필] 초록35 데일리 톤업 선쿠션 무기자차 세트</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">41,310</span>
+												<span class="original">54,000</span>
+												<span class="rate">23%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/02.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Ownist</div>
+												<div class="front"></div>
+												<div class="product">트리플콜라겐 오렌지 28개입(4주)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">69,700</span>
+												<span class="original">73,400</span>
+												<span class="rate">5%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/03.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">hersteller</div>
+												<div class="front"></div>
+												<div class="product">[SET] 니어바이 바디 케어 2종 세트 (바디워시&바디로션)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">35,100</span>
+												<span class="original">54,000</span>
+												<span class="rate">35%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/04.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">mude</div>
+												<div class="front"></div>
+												<div class="product">소프트 블러 틴트 3g</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">15,300</span>
+												<span class="original">17,000</span>
+												<span class="rate">10%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/05.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">ENTROPYMAKEUP</div>
+												<div class="front"></div>
+												<div class="product">브로우 블리치</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">43,900</span>
+												<span class="original">45,000</span>
+												<span class="rate">2%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/06.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LADOR</div>
+												<div class="front"></div>
+												<div class="product">[2개세트]퍼펙트 헤어필업 150ml x 2개 (생크림 트리트먼트)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">36,800</span>
+												<span class="original">46,000</span>
+												<span class="rate">20%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/07.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">rom&nd</div>
+												<div class="front"></div>
+												<div class="product">[2개 세트]제로 매트 립스틱 x2</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">14,310</span>
+												<span class="original">24,000</span>
+												<span class="rate">40%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/08.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Piccasso</div>
+												<div class="front"></div>
+												<div class="product">[피카소] 133 픽싱 파우더(+납작브러쉬 증정)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">41,300</span>
+												<span class="original">59,000</span>
+												<span class="rate">30%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/09.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">isntree</div>
+												<div class="front"></div>
+												<div class="product">참마 비건 밀크 클렌저 220ml</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">18,900</span>
+												<span class="original">25,000</span>
+												<span class="rate">24%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/10.png" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Lilybyred</div>
+												<div class="front">[뷰티특가][사은품 증정]</div>
+												<div class="product">스키니메스 브로우 펜슬</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">5,760</span>
+												<span class="original">8,000</span>
+												<span class="rate">28%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sc-product__event">
+						<div class="swiper eventSwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="./asset/images/slide/event/01.jpg" alt>
+										<div class="group-text">
+											<em class="title">ADIDAS</em>
+											<em class="sub">SUMMER ESCAPE</em>
+											<span class="desc">뜨거운 태양처럼 강렬했던 아디다스와 함께한 여름 날의 단상들</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="./asset/images/slide/event/02.jpg" alt>
+										<div class="group-text white">
+											<em class="title">NIKE</em>
+											<em class="sub">Time of our Life</em>
+											<span class="desc">24FA COLLECTION</span>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#">
+										<img src="./asset/images/slide/event/03.jpg" alt>
+										<div class="group-text">
+											<em class="title">HUNTER</em>
+											<em class="sub">레인부츠의 클래식</em>
+											<span class="desc">어떤 날씨에도 헌터와 함께!</span>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-btn__wrap">
+								<button type="button" class="btn prev" aria-label="이전 슬라이드"></button>
+								<button type="button" class="btn next" aria-label="다음 슬라이드"></button>
+							</div>
+
+						</div>
+					</div>
+					<div class="sc-product__catalog">
+						<div class="sc-product__catalog-wrap">
+							<div class="card-title">
+								<h3 class="headline">WOMEN</h3>
+								<a href="#" class="btn-more">more</a>
+							</div>
+							<ul class="card-list">
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/01.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">OLIVE DES OLIVE</div>
+												<div class="front">[한정특가]</div>
+												<div class="product">라운드넥 부클 트위드 자켓 OW4SJ1500</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">193,320</span>
+												<span class="original">358,000</span>
+												<span class="rate">46%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/02.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">APOA</div>
+												<div class="front"></div>
+												<div class="product">Pao Long Handle Bag Crinkle_6 colors</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">258,000</span>
+												<span class="original"></span>
+												<span class="rate"></span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/03.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">NILBY P</div>
+												<div class="front">[앨리스펑크 PICK]</div>
+												<div class="product">24N summer volume ops [BK]</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">152,100</span>
+												<span class="original">169,000</span>
+												<span class="rate">10%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/04.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Ssecondo</div>
+												<div class="front">[18%쿠폰][~9/1까지] | [뉴컬러 단독 출시][선물포장]</div>
+												<div class="product">[단독] Pearl ribbon knot hair claw clip (6 colors)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">22,304</span>
+												<span class="original">34,000</span>
+												<span class="rate">34%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/05.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">edel9</div>
+												<div class="front">[한정특가][~8/31까지] | [뉴컬러 베이지 출시]</div>
+												<div class="product">[단독]Marigold 메리골드 리본 슬링백 2cm/5cm</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">57,086</span>
+												<span class="original">99,800</span>
+												<span class="rate">42%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/06.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LEMEME</div>
+												<div class="front"></div>
+												<div class="product">Sac Nouvelle_3colors</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">328,000</span>
+												<span class="original"></span>
+												<span class="rate"></span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/women/07.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">MONDAY EDITION</div>
+												<div class="front"></div>
+												<div class="product">[단독]Pearl Bow Earrings</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">63,180</span>
+												<span class="original">78,000</span>
+												<span class="rate">19%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="sc-product__catalog-wrap">
+							<div class="card-title">
+								<h3 class="headline">MEN</h3>
+								<a href="#" class="btn-more">more</a>
+							</div>
+							<ul class="card-list">
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/01.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">Dunst for MEN</div>
+												<div class="front"></div>
+												<div class="product">UNISEX LEATHER LOGO POLO SHIRT NAVY_M_UDTS4B122N2</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">65,550</span>
+												<span class="original">69,000</span>
+												<span class="rate">5%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/02.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">WEDNESDAY OASIS</div>
+												<div class="front"></div>
+												<div class="product">stone cago pocket banding shorts(4col)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">17,577</span>
+												<span class="original">27,900</span>
+												<span class="rate">37%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/03.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">MINIMAL PROJECT</div>
+												<div class="front"></div>
+												<div class="product">로버스트 헤비 오버핏 반팔티셔츠 MST127 / 9color</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">18,800</span>
+												<span class="original">35,800</span>
+												<span class="rate">47%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/04.png" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">FLUKE</div>
+												<div class="front"></div>
+												<div class="product">플루크 버뮤다 데님 하프팬츠 FSP110 / 3color</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">47,520</span>
+												<span class="original">85,000</span>
+												<span class="rate">44%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/05.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">ADIDAS</div>
+												<div class="front">[24SS]</div>
+												<div class="product">[EG4959] SUPERSTAR</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">139,000</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/06.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">NIKE</div>
+												<div class="front">[SP24]</div>
+												<div class="product">[FZ3963-010] W NIKE ZOOM VOMERO 5 PRM</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">219,000</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/men/07.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">COVERNAT</div>
+												<div class="front">24SS_빈티지 로고 볼캡 블랙</div>
+												<div class="product"></div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">29,000</span>
+												<span class="original">39,000</span>
+												<span class="rate">25%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="sc-product__catalog-wrap">
+							<div class="card-title">
+								<h3 class="headline">life</h3>
+								<a href="#" class="btn-more">more</a>
+							</div>
+							<ul class="card-list">
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/01.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LEGODT</div>
+												<div class="front"></div>
+												<div class="product">레고트 루프 텀블러 600ml</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">35,000</span>
+												<span class="original">42,000</span>
+												<span class="rate">16%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/02.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LUCKY PLANET</div>
+												<div class="front">[~9/11까지]</div>
+												<div class="product">고비욘드 S3캐리어 28인치 버터옐로우 독일산PC100% 전자저울 프론트포켓 레드...</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">234,000</span>
+												<span class="original">288,000</span>
+												<span class="rate">18%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/03.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LG</div>
+												<div class="front">[LG위크]</div>
+												<div class="product">[2024 신모델] LG 휘센 오브제컬렉션 제습기 DQ134MWEC 13L 에센스화이트</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">388,550</span>
+												<span class="original">500,000</span>
+												<span class="rate">22%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/04.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">DECOVIEW</div>
+												<div class="front">[~9/1까지!][단독최저가]</div>
+												<div class="product">[단독]그린 포인트 도트 장우산</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">16,800</span>
+												<span class="original">28,000</span>
+												<span class="rate">40%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">단독</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/05.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">maatila</div>
+												<div class="front"></div>
+												<div class="product">리본케이크 시어서커 여름 차렵이불세트(SS/Q/K) 4종</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">54,900</span>
+												<span class="original">91,500</span>
+												<span class="rate">40%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/06.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">belkin</div>
+												<div class="front"></div>
+												<div class="product">벨킨 부스트업 프로 2in1 맥세이프 충전기 15W 각도조절 무선 충전 스탠드 WIZ02...</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">179,000</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/life/07.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">PLUS MINUS ZERO</div>
+												<div class="front"></div>
+												<div class="product">리빙팬 Z710 옐로우</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">169,000</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="sc-product__catalog-wrap">
+							<div class="card-title">
+								<h3 class="headline">beauty</h3>
+								<a href="#" class="btn-more">more</a>
+							</div>
+							<ul class="card-list">
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/11.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">notif.</div>
+												<div class="front">[무료배송]</div>
+												<div class="product">[2개구성] 무드나잇 타트체리 (60정*2)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">50,000</span>
+												<span class="original">64,000</span>
+												<span class="rate">21%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/12.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">ELIMERE</div>
+												<div class="front">[뷰티특가]</div>
+												<div class="product">브릭커 피기 어성초 천연비누 140g (무화과 고체팩)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">22,400</span>
+												<span class="original">35,000</span>
+												<span class="rate">36%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/13.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LOWVIBE</div>
+												<div class="front"></div>
+												<div class="product">057 웨이크업나인 핸드크림 50ml</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">19,000</span>
+												<span class="original"></span>
+												<span class="rate"></span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/14.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">karadium</div>
+												<div class="front">[뷰티특가]</div>
+												<div class="product">카라디움 글래시 피팅 틴트</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">13,900</span>
+												<span class="original">18,900</span>
+												<span class="rate">26%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/15.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">shhom</div>
+												<div class="front">[무료배송]</div>
+												<div class="product">숌 복숭아 글로우 플럼퍼</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">13,500</span>
+												<span class="original">15,000</span>
+												<span class="rate">10%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/16.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">ohgam.lab</div>
+												<div class="front"></div>
+												<div class="product">오감랩 올데이 아로마틱데이 세트(솝&에어리프레셔 세트)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">49,200</span>
+												<span class="original"></span>
+												<span class="rate"></span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/beauty/17.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">notif.</div>
+												<div class="front">[무료배송]</div>
+												<div class="product">마인드풀니스 필로우 미스트 룸스프레이 100ml</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">28,000</span>
+												<span class="original"></span>
+												<span class="rate"></span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="sc-product__catalog-wrap">
+							<div class="card-title">
+								<h3 class="headline">kids</h3>
+								<a href="#" class="btn-more">more</a>
+							</div>
+							<ul class="card-list">
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/01.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">OWLEYBARN</div>
+												<div class="front"></div>
+												<div class="product">라인하프넥상하복(2color)</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">29,665</span>
+												<span class="original">129,000</span>
+												<span class="rate">77%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/02.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">MINIDOU</div>
+												<div class="front"></div>
+												<div class="product">크림 올오버 남아 여아 유아 아동 스웨터 가디건</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">41,650</span>
+												<span class="original">49,000</span>
+												<span class="rate">15%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/03.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">UNEEL</div>
+												<div class="front"></div>
+												<div class="product">케일 조끼_핑크</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">31,144</span>
+												<span class="original">45,800</span>
+												<span class="rate">32%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/04.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">THELOHA</div>
+												<div class="front">[순면 100%]</div>
+												<div class="product">Lust knit set 니트 상하복 세트</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">64,175</span>
+												<span class="original">75,500</span>
+												<span class="rate">15%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/05.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">NUCL</div>
+												<div class="front">24SPR/FW</div>
+												<div class="product">면100 MTM 주니어 카고조거팬츠 _Z-블랙</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">25,500</span>
+												<span class="original">75,000</span>
+												<span class="rate">66%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/06.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">ledum</div>
+												<div class="front"></div>
+												<div class="product">Joe Trench Coat</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">169,660</span>
+												<span class="original">229,500</span>
+												<span class="rate">26%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="card-item">
+									<button type="button" name="button" class="btn-wish">
+										<span class="blind">찜하기</span>
+									</button>
+									<a href="#">
+										<div class="card-item__thumb"><img src="./asset/images/product/kids/07.jpg" alt></div>
+										<div class="card-item__text">
+											<div class="card-item__text-title">
+												<div class="brand">LOMC</div>
+												<div class="front"></div>
+												<div class="product">벨크로 키즈 운동화 스펙트로 오프화이트</div>
+											</div>
+											<div class="card-item__price">
+												<span class="discount">14,790</span>
+												<span class="original">49,000</span>
+												<span class="rate">69%</span>
+											</div>
+											<div class="card-item__tag">
+												<span class="tag">쿠폰</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="sc-product__wdna">
+						<h3 class="headline">wdna style <a href="#" class="btn-plus"><span class="blind">더보기</span></a></h3>
+						<ul class="sc-product__wdna-list" role="tablist">
+							<li class="sc-product__wdna-item active" data-tab="#wdna1"><a href="#">ALL</a></li>
+							<li class="sc-product__wdna-item" data-tab="#wdna1"><a href="#">WOMEN</a></li>
+							<li class="sc-product__wdna-item" data-tab="#wdna2"><a href="#">MEN</a></li>
+							<li class="sc-product__wdna-item" data-tab="#wdna3"><a href="#">LIFE</a></li>
+							<li class="sc-product__wdna-item" data-tab="#wdna4"><a href="#">BEAUTY</a></li>
+						</ul>
+						<div class="sc-product__wdna-tab" role="tabpanel">
+							<ul class="sc-product__wdna-tab-list active" id="wdna1">
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/01.jpg" alt></div>
+										<div class="insta">
+											<span class="account">peachtaffys</span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/02.jpg" alt></div>
+										<div class="insta">
+											<span class="account">nae0planet</span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/03.jpg" alt></div>
+										<div class="insta">
+											<span class="account">nae0planet</span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/04.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/05.jpg" alt></div>
+										<div class="insta">
+											<span class="account">leseizieme_official</span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/06.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="sc-product__wdna-tab-list" id="wdna2">
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/men/01.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/men/02.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/men/03.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/men/04.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/men/05.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/men/06.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="sc-product__wdna-tab-list" id="wdna3">
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/life/01.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/life/02.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/life/03.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/life/04.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/life/05.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/life/06.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<ul class="sc-product__wdna-tab-list" id="wdna4">
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/beauty/01.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/beauty/02.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/beauty/03.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/beauty/04.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/beauty/05.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="sc-product__wdna-tab-item">
+									<a href="#">
+										<div class="thumb"><img src="./asset/images/wdna/beauty/06.jpg" alt></div>
+										<div class="insta">
+											<span class="account"></span>
+											<button type="button" name="button" class="btn-wish">
+												<span class="blind">찜하기</span>
+											</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<aside class="ad-benefit">
+					<a href="#"><img src="./asset/images/banner-btm-01.png" alt="챙겨야 할 이 달의 등급 혜택"></a>
+					<a href="#"><img src="./asset/images/banner-btm-02.png" alt="신규가입 10% 쿠폰 즉시 지급"></a>
+					<a href="#"><img src="./asset/images/banner-btm-03.png" alt="놓칠 수 없는 할인 혜택"></a>
+				</aside>
+				<section class="sc-info">
+					<div class="sc-info__board">
+						<div class="sc-info__board-tab" role="tablist">
+							<a href="#" class="active" data-tab="#info1">NEWS</a>
+							<a href="#" data-tab="#info2">이벤트 발표</a>
+						</div>
+						<ul class="sc-info__board-list active" role="tabpanel" id="info1">
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[안내] 8/25(일) SSGPAY 결제서비스 일시중단 안내 (02:00 ~ 06:00)</em>
+									<time class="date">2024-08-23</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[안내] 8/14(택배 없는 날) , 8/15일(광복절) 고객센터 휴무 안내 및 택배사 운영 일정 안내</em>
+									<time class="date">2024-08-01</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[안내] 개인정보 처리방침 변경 안내(2024.07.31)</em>
+									<time class="date">2024-07-31</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[안내] 보다나 글램파워 롱래스팅 히팅뷰러 리콜 안내</em>
+									<time class="date">2024-07-04</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[안내] 개인정보 처리방침 변경 안내(2024.06.18)</em>
+									<time class="date">2024-06-18</time>
+								</a>
+							</li>
+						</ul>
+						<ul class="sc-info__board-list" role="tabpanel" id="info2">
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[이벤트 당첨자 발표] [W컨셉] 망고매니플리즈(MANGOMANYPLEASE) W.LIVE 이벤트 당첨자 안내	</em>
+									<time class="date">2024-10-21</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[이벤트 당첨자 발표] [W컨셉] 르917(LE17SEPTEMBRE) 리뷰 이벤트 당첨자 안내</em>
+									<time class="date">2024-10-11</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[이벤트 당첨자 발표] [W컨셉] 그로브 W.LIVE 퀴즈 이벤트 당첨자 안내</em>
+									<time class="date">2024-10-02</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[이벤트 당첨자 발표] [W컨셉] RE_L(리엘) 홀리데이 증정이벤트 당첨자 안내</em>
+									<time class="date">2023-12-27</time>
+								</a>
+							</li>
+							<li class="sc-info__board-item">
+								<a href="#">
+									<em class="title">[이벤트 당첨자 발표] [W컨셉] INSTANTFUNK(인스턴트펑크) W.LIVE 채팅참여왕 당첨자 안내</em>
+									<time class="date">2023-10-20</time>
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="btn-more"><span class="blind">더보기</span></a>
+					</div>
+					<div class="sc-info__help">
+
+						<div class="sc-info__help-desk">
+							<em class="title">
+								고객센터
+								<a href="tel:1566-5027" class="tel">1566-5027</a>
+							</em>
+							<span class="hour">운영시간 : 평일 09:00~18:00 (점심시간 : 12:30~13:30)</span>
+							<a href="mailto:cs_help@wconcept.co.kr" class="mail">cs_help@wconcept.co.kr</a>
+						</div>
+						<div class="sc-info__help-media">
+							<div class="sc-info__help-media--link">
+								<a href="#">FAQ</a>
+								<a href="#">1:1문의</a>
+							</div>
+							<div class="sc-info__help-media--sns">
+								<a href="#" class="facebook"><span class="blind">페이스북</span></a>
+								<a href="#" class="insta"><span class="blind">인스타그램</span></a>
+								<a href="#" class="pint"><span class="blind">핀터레스트</span></a>
+								<a href="#" class="youtube"><span class="blind">유튜브</span></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="side-btn">
+				<button type="button" class="btn-history"><span class="blind">히스토리 열기</span></button>
+				<div class="side-btn__wrap top"><button type="button" class="btn-arrow"><span class="blind">상단버튼</span></button>
+				</div>
+				<div class="side-btn__wrap bottom"><button type="button" class="btn-arrow"><span
+							class="blind">하단버튼</span></button></div>
+			</div>
+		</main>
+
+		<footer id="footer">
+			<h2 class="blind">푸터</h2>
+			<div class="footer__top">
+				<ul class="footer__list">
+					<li class="footer__item"><a href="#">회사소개</a></li>
+					<li class="footer__item"><a href="#">입점상담</a></li>
+					<li class="footer__item"><a href="#">제휴문의</a></li>
+					<li class="footer__item"><a href="#">이용약관</a></li>
+					<li class="footer__item"><a href="#">개인정보처리방침</a></li>
+					<li class="footer__item"><a href="#">고객센터</a></li>
+					<li class="footer__item"><a href="#">채용정보</a></li>
+					<li class="footer__item"><a href="#">GLOBAL</a></li>
+				</ul>
+			</div>
+			<div class="footer__bottom">
+				<address class="footer__addr">
+					<p class="addr">
+						<span>상호명 : ㈜더블유컨셉코리아</span>
+						<span>대표자 : 이주철</span>
+						<span>주소 : 서울특별시 강남구 테헤란로 231, EAST동 20층(역삼동, 센터필드)</span>
+					</p>
+					<p class="addr">
+						<span>사업자등록번호 : 211-88-19183</span>
+						<span>통신판매업신고 : 제2009호-서울강남-00847호 <a href="#" class="footer__link">사업자정보확인</a></span>
+						<span>개인정보보호책임자 : 허선희</span>
+						<span>호스팅서비스 : ㈜ 더블유컨셉코리아</span>
+					</p>
+					<small class="copy">COPYRIGHT ⓒ ㈜더블유컨셉코리아 ALL RIGHTS RESERVED</small>
+				</address>
+				<div class="footer__compensate">
+					<strong>소비자피해보상보험</strong>
+					<p>
+						고객님은 안전거래를 위해 현금 결제 시, Wconcept 에서 가입한<br>
+						소비자피해보상보험 서비스를 이용하실 수 있습니다.
+					</p>
+					<span>보상대상 : 미배송/반품, 환불거부/쇼핑몰부도</span>
+					<a href="#" class="footer__link">서비스 가입사실 확인</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,655 @@
+// 메인
+//슬라이더
+.sc-visual {
+	.innder {
+		overflow: hidden;
+	}
+
+	.visualSwiper {
+		position: relative;
+		width: 100%;
+		height: 705px;
+		margin: 0 auto;
+
+		&:hover {
+			.btn {
+				background: $opacity-black-70;
+			}
+		}
+	}
+
+	.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next)::before {
+		content: '';
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, .4);
+	}
+
+	.swiper-wrapper {
+		margin-left: -335.5px;
+	}
+
+	.swiper-slide {
+		// transform: translateX(326px);
+		width: 662px;
+		height: 100%;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+
+		.group-text {
+			position: absolute;
+			z-index: 4;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 0 30px 120px;
+			@include column-flexbox(end, center);
+			flex-wrap: wrap;
+			margin: 0;
+			@include text-style(36, $white);
+			text-align: center;
+
+			.title {
+				line-height: 43px;
+				font-weight: $font-weight-medium;
+			}
+
+			.desc {
+				font-size: 20px;
+				margin-top: 12px;
+				font-weight: $font-weight-regular;
+				line-height: 24px;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				z-index: 3;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				top: 0;
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 100%);
+			}
+		}
+	}
+
+	// .swiper-btn__wrap{
+	// 	@include pos-center-y;
+	// 	z-index: 7;
+	// 	width: 100%;
+	// 	height: 70px;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	.btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%);
+		z-index: 7;
+		display: flex;
+		width: 70px;
+		height: 70px;
+
+		&::after {
+			content: '';
+			@include bg('common/svg/btn_prev_white.svg');
+			background-position: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		&.prev {
+			// margin-right: 1267px;
+			// ml
+			margin-left: -667px;
+		}
+
+		&.next {
+			margin-left: 589px;
+
+			&::after {
+				rotate: (180deg);
+			}
+
+			// rotate: (180deg);
+			// margin-left: 1245PX;
+		}
+	}
+}
+
+// }
+
+.ad-banner {
+	margin: 100px auto;
+	@include flexbox;
+
+	a {
+		display: flex;
+		width: 50%;
+
+		&:first-child {
+			background: $banner-color-1;
+			justify-content: flex-end;
+		}
+
+		&:last-child {
+			background: $banner-color-2;
+		}
+	}
+}
+
+.headline {
+	@include text-style(48, $secondary);
+	font-weight: $font-weight-thin;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+// make it yours
+.sc-product {
+	max-width: 1920px;
+	&__yours {
+		width: 100%;
+		padding: 0 80px;
+		position: relative;
+
+		.card-list {
+			gap: 0;
+		}
+
+		.card-item {
+			max-width: 233px;
+
+			&__thumb {
+				position: relative;
+				width: 233px;
+			}
+		}
+	}
+
+	&__beauty {
+		width: max-content;
+		margin: 100px auto 120px auto;
+		&-wrap {
+			padding: 0 10px;
+			display: flex;
+			gap: 50px;
+			.beautySwiper {
+				margin: 0;
+				width: 752px;
+				.swiper-slide>a {
+					position: relative;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				.btn::after {
+					background-position: -330px -30px;
+				}
+
+				.prev::after {
+					rotate: (180deg);
+				}
+
+				.group-text {
+					@include pos-center;
+					z-index: 10;
+					text-align: center;
+
+					.title {
+						@include text-style(60, $white);
+						margin-bottom: 25px;
+					}
+
+					.sub {
+						@include text-style(18, $white);
+						margin-bottom: 30px;
+					}
+
+					.desc {
+						@include flexbox;
+						height: 50px;
+						padding: 0 28px;
+						@include text-style(16, $white);
+						@extend %border;
+						border-color: $white;
+					}
+				}
+			}
+			.card-list{
+				flex: 1;
+				display: grid;
+				grid-template-columns: repeat(2,minmax(100px, 1fr));
+				gap: 20px;
+				width: 428px;
+				@media (min-width: 1600px) {
+					width: 765px;
+					grid-template-columns: repeat(4,minmax(100px, 1fr));
+				}
+				@media (min-width: 1920px) {
+					width: 1080px;
+					grid-template-columns: repeat(5,minmax(100px, 1fr));
+				}
+			}
+			.card-item {
+				display: none; 
+				width: 205px;
+				&:nth-child(-n+4) {
+					display: block; // 4개만 보이게
+				}
+				@media (min-width: 1600px) {
+					width: 180px;
+					&:nth-child(-n+8) {
+						display: block; // 8개만 보이게
+					}
+				}
+				@media (min-width: 1920px) {
+					width: 200px;
+					display: block;
+				}
+				&__thumb {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__event {
+		width: 100%;
+		.eventSwiper {
+			.swiper-slide>a {
+				position: relative;
+			}
+
+			.btn::after {
+				background-position: -330px -30px;
+			}
+
+			.prev::after {
+				rotate: (180deg);
+			}
+		}
+
+		.group-text {
+			@include pos-center;
+			z-index: 10;
+			text-align: center;
+			@include column-flexbox;
+
+			.title {
+				@include text-style(48, $secondary);
+				font-weight: $font-weight-regular;
+			}
+
+			.sub {
+				@include text-style(12, $secondary);
+				font-weight: $font-weight-regular;
+			}
+
+			.desc {
+				@include flexbox;
+				margin-top: 35px;
+				min-width: 180px;
+				height: 50px;
+				padding: 0 46px;
+				@include text-style(14, $primary);
+				font-weight: $font-weight-semibold;
+				border: 2px solid $secondary;
+			}
+
+			&.white {
+				.title {
+					color: $white;
+				}
+
+				.sub {
+					color: $white;
+				}
+
+				.desc {
+					color: $white;
+					border: 1px solid $white;
+				}
+			}
+		}
+	}
+
+	&__catalog {
+		margin: 0 auto;
+		margin-top: 120px;
+		padding: 0 15px 0 20px;
+		width: max-content;
+		&-wrap {
+			@include flexbox(start, start);
+			gap: 20px;
+			@media (min-width: 1600px) {
+				gap: 40px;
+			}
+			@media (min-width: 1920px) {
+				gap: 52px;
+			}
+			&+& {
+				margin-top: 80px;
+			}
+
+			.card-title {
+				width: 100px;
+				margin-top: -10px;
+				@include column-flexbox(start, end);
+				gap: 20px;
+				@media (min-width: 1920px) {
+					width: 190px;
+				}
+				.headline {
+					line-height: 1;
+					font-size: 38px;
+					@media (min-width: 1920px) {
+						font-size: 50px;
+					}
+				}
+
+				.btn-more {
+					@include text-style(16, $gray-coal);
+
+					&::after {
+						content: '▶';
+						@include text-style(12, #858585);
+						margin-left: 3px;
+					}
+				}
+			}
+
+			.card-item {
+				width: 204px;
+				display: none;
+				&:nth-child(-n+5) {
+					display: block; // 4개만 보이게
+				}
+				@media (min-width: 1600px) {
+					&:nth-child(-n+6) {
+						display: block; // 8개만 보이게
+					}
+				}
+				@media (min-width: 1920px) {
+					display: block;
+				}
+				&__thumb {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__wdna {
+		width: 100%;
+		margin: 90px 0;
+		&-list {
+			@include flexbox;
+			@include text-style(16, $gray-cloud);
+			font-weight: $font-weight-semibold;
+			gap: 20px;
+			@media (min-width: 1920px) {
+				gap: 40px;
+			}
+			transition: all ease-in-out .2s;
+		}
+
+		&-item {
+			position: relative;
+
+			&.active,
+			&:hover {
+				color: $secondary;
+
+				&::after {
+					content: '';
+					position: absolute;
+					margin-top: 3px;
+					top: 100%;
+					left: 0;
+					width: 100%;
+					height: 3px;
+					background: $primary;
+				}
+			}
+		}
+
+		&-tab {
+			margin-top: 40px;
+			padding: 0 10px;
+
+			&-list {
+				@include flexbox;
+				gap: 25px;
+				display: none;
+				&.active{
+					display: flex;
+				}
+			}
+
+			&-item {
+				position: relative;
+
+				.thumb {
+					aspect-ratio: 1/1;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				.insta {
+					@include flexbox(start, center);
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 100%;
+					height: 45px;
+					background: $opacity-black-20;
+					overflow: hidden;
+					min-width: 0;
+
+					.account {
+						padding: 0 45px 0 25px;
+						@include text-style(15, $white);
+						font-weight: $font-weight-regular;
+						@include ellipsis;
+					}
+
+					.btn-wish {
+						width: 18px;
+						height: 18px;
+						top: auto;
+						right: 25px;
+						@include bg('common/svg/ico_heart_line_28.svg');
+						background-size: cover;
+						background-position: 0 0;
+						filter: invert(100%);
+					}
+				}
+			}
+		}
+	}
+}
+
+.ad-benefit {
+	width: 1280px;
+	margin: 0 auto;
+	display: flex;
+}
+
+
+.sc-info {
+	width: 1280px;
+	margin: 80px auto 120px auto;
+	@include flexbox(between, end);
+
+	&__board {
+		position: relative;
+		width: 575px;
+		min-width: 0;
+
+		.btn-more {
+			position: absolute;
+			top: 12px;
+			right: 0;
+			width: 13px;
+			height: 13px;
+			@extend %spr-customer;
+			background-position: -200px 0;
+		}
+
+		&-tab {
+			display: flex;
+			border-bottom: 2px solid #000;
+
+			a {
+				@include text-style(22, #a3a3a3);
+				text-transform: uppercase;
+				padding: 0 33px 20px 0;
+				font-weight: $font-weight-light;
+				&.active {
+					color: $primary;
+				}
+			}
+		}
+
+		&-list {
+			margin-top: 22px;
+			padding-left: 18px;
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+
+		&-item {
+			list-style: outside;
+
+			a {
+				min-width: 0;
+				@include flexbox(between);
+			}
+
+			&+& {
+				margin-top: 12px;
+			}
+
+			.title {
+				flex: 1;
+				@include ellipsis;
+			}
+
+			.date {
+				width: 100px;
+				text-align: right;
+				font-weight: $font-weight-light;
+			}
+		}
+	}
+
+	&__help {
+		width: 575px;
+		padding: 45px 70px 0 0;
+
+		&-desk {
+			margin-bottom: 50px;
+
+			.title {
+				@include text-style(22);
+			}
+
+			.tel {
+				@include text-style(42);
+				font-weight: $font-weight-medium;
+				margin-left: 40px;
+			}
+
+			.hour {
+				font-weight: $font-weight-light;
+				display: block;
+				line-height: 24px;
+			}
+
+			.mail {
+				font-weight: $font-weight-light;
+				display: block;
+				line-height: 24px;
+			}
+		}
+
+		&-media {
+			@include flexbox(between);
+
+			&--link {
+				display: flex;
+				gap: 10px;
+
+				a {
+					@extend %border;
+					width: 95px;
+					height: 38px;
+					@include flexbox;
+				}
+			}
+
+			&--sns {
+				display: flex;
+				gap: 10px;
+
+				a {
+					width: 31px;
+					height: 31px;
+					background-color: $primary;
+					border-radius: 50%;
+					position: relative;
+
+					&::after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 31px;
+						height: 31px;
+						@include bg('common/spr-footer.png');
+						background-position: 0 0;
+						background-size: 800%;
+						background-position: 2px -48px;
+					}
+
+					&.insta::after {
+						background-position: -47px -48px;
+					}
+
+					&.pint::after {
+						background-position: -97px -47px;
+					}
+
+					&.youtube::after {
+						background-position: -147px -48px;
+					}
+				}
+			}
+		}
+	}
+}

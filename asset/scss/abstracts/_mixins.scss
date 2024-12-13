@@ -1,0 +1,168 @@
+@mixin ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin multi-ellipsis($line-height, $lines) {
+    line-height: $line-height;
+    max-height: $line-height * $lines;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical; /* autoprefixer: off */
+}
+// flex
+$flex-map:(
+  start:flex-start,
+  end:flex-end,
+  between:space-between,
+  around:space-around,
+  stretch:stretch,
+  center:center
+);
+
+@function _get-flex-value($key){
+  @return map-get($flex-map , $key);
+}
+
+@mixin flexbox($jc: center, $ai: center) {
+  display: flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
+}
+
+@mixin inline-flexbox($jc: center, $ai: center) {
+  display: inline-flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
+}
+
+@mixin column-flexbox($jc: center, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($jc);
+}
+// absolute 위치 지정
+@mixin pos-center-x($type: absolute){ // 기본값이 absolute로
+  @if ($type == fixed or $type == absolute){
+    position: $type;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin pos-center-y($type: absolute){ // 기본값이 absolute로
+  @if ($type == fixed or $type == absolute){
+    position: $type;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+@mixin pos-center($type: absolute){ // 기본값이 absolute로
+  @if ($type == fixed or $type == absolute){
+    position: $type;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+@mixin text-style-10(){
+	font-size: $font-size-10;
+}
+@mixin text-style-12(){
+	font-size: $font-size-12;
+}
+@mixin text-style-13(){
+	font-size: $font-size-13;
+}
+@mixin text-style-14(){
+	font-size: $font-size-14;
+}
+@mixin text-style-15(){
+	font-size: $font-size-15;
+}
+@mixin text-style-16(){
+	font-size: $font-size-16;
+}
+@mixin text-style-18(){
+	font-size: $font-size-18;
+}
+@mixin text-style-22(){
+	font-size: $font-size-22;
+}
+@mixin text-style-36(){
+	font-size: $font-size-36;
+}
+@mixin text-style-42(){
+	font-size: $font-size-42;
+}
+@mixin text-style-48(){
+	font-size: $font-size-48;
+}
+@mixin text-style-50(){
+	font-size: $font-size-50;
+}
+@mixin text-style-60(){
+	font-size: $font-size-60;
+}
+
+// font
+@mixin text-style($size, $color: false) {
+
+	@if $size == 10 {
+    @include text-style-10;
+  }
+  @else if $size == 12 {
+    @include text-style-12;
+  }
+  @else if $size == 13 {
+    @include text-style-13;
+  }
+  @else if $size == 14 {
+    @include text-style-14;
+  }
+  @else if $size == 16 {
+    @include text-style-16;
+  }
+  @else if $size == 18 {
+    @include text-style-18;
+  }
+  @else if $size == 22 {
+    @include text-style-22;
+  }
+  @else if $size == 36 {
+    @include text-style-36;
+  }
+  @else if $size == 42 {
+    @include text-style-42;
+  }
+  @else if $size == 48 {
+    @include text-style-48;
+  }
+  @else if $size == 50 {
+    @include text-style-50;
+  }
+  @else if $size == 60 {
+    @include text-style-60;
+  }
+
+  @if type-of($color) == 'color' {
+    color: $color;
+  }
+}
+
+//bg
+@mixin bg($name, $path: "../images/") {
+	background-image: url("#{$path}/#{$name}");
+	background-repeat: no-repeat;
+}
+
+//서브메뉴 계산
+@function calc-top($index, $height: 47px, $offset: 12px) {
+  @return calc(#{$height} * $index - #{$offset});
+}

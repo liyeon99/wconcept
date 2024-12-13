@@ -1,0 +1,75 @@
+// common의 용도
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+.inner{
+  width: 100%;
+	min-width: $width;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+#wrap{
+	padding-top: 233px;
+}
+#skipNav a{
+  position: absolute;
+  width: 100%;
+	top: -100px;
+	padding: 5px 0;
+	white-space: nowrap;
+	background: $white;
+	color: $primary;
+  text-align: center;
+	font-weight: $font-weight-semibold;
+	z-index: 20;
+}
+#skipNav a:focus,
+#skipNav a:active{
+	top: 0;
+}
+
+.side-btn{
+	z-index: 999;
+	position: fixed;
+	bottom: 40px;
+	right:50%;
+	margin-right: -48%;
+	@media (min-width: 1920px) {
+		margin-right: -894px;
+	}
+	@include column-flexbox;
+	gap: 6px;
+	button{
+		width: 42px;
+		height: 42px;
+		background: sandybrown;
+		border-radius: 50%;
+		background-color: $primary;
+		@include bg('common/svg/ico_history.svg');
+		background-position: center;
+		&.btn-history{
+			background-size: 22px 20px;
+		}
+		&.btn-arrow{
+			background-color: #fff;
+			border: 1px solid #e9e9e9;
+			@include bg('common/svg/ico_arrow_down_18.svg');
+		}
+	}
+	&__wrap{
+		--height:0;
+		height: var(--height);
+		overflow: hidden;
+		transition: .3s;
+		&.top{
+			button{
+				rotate: (180deg);
+			}
+		}
+	}
+}

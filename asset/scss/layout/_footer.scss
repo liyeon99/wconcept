@@ -1,0 +1,54 @@
+// footer
+.footer{
+  margin-top: 70px;
+  &__top{
+    background: #848484;
+    color: $white;
+  }
+  &__list{
+    height: 57px;
+    @include flexbox;
+    max-width: $width;
+    margin: 0 auto;
+  }
+  &__item{
+    flex: 1;
+    @include flexbox;
+  }
+  &__bottom{
+    max-width: $width;
+    margin: 0 auto;
+		padding: 40px 0;
+    @include flexbox(between, start);
+		@include text-style(12,$gray-coal);
+		line-height: 20px;
+		font-weight: $font-weight-regular;
+		.footer__link{
+			border : 1px solid #000;
+			min-width: 60px;
+			padding: 0 8px;
+			height: 20px;
+			font-size: 11px;
+			color: $secondary;
+		}
+  }
+	&__compensate{
+		width: 340px;
+		position: relative;
+		strong{
+			@include text-style(12,$secondary);
+			font-weight: $font-weight-medium;
+		}
+		p{
+			margin-bottom: 14px;
+		}
+		&::before{
+			content: '';
+			@include pos-center-y;
+			left: -20px;
+			width: 1px;
+			height: 87px;
+			background: #e5e5e5;
+		}
+	}
+}

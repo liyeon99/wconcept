@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+}
+
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+:root {
+	-webkit-tap-highlight-color: transparent;
+	/* 모바일에서 요소를 터치할 때 나타나는 하이라이트 효과를 제거 */
+	-webkit-text-size-adjust: 100%;
+	/* iOS에서 텍스트 크기의 자동 조정을 막고 원래 크기로 유지 */
+	text-size-adjust: 100%;
+	/* 모든 브라우저에서 텍스트 크기의 자동 조정을 막고 원래 크기로 유지 */
+	cursor: default;
+	/* 기본 커서 스타일을 적용 */
+	line-height: 1.5;
+	/* 기본 줄 간격을 1.5로 설정해 가독성 향상 */
+	overflow-wrap: break-word;
+	/* 긴 단어나 URL이 요소의 너비를 넘을 경우 자동 줄바꿈을 적용 */
+	-moz-tab-size: 4;
+	/* Firefox에서 탭 문자의 너비를 4칸으로 설정 */
+	tab-size: 4;
+	/* 모든 브라우저에서 탭 문자의 너비를 4칸으로 설정 */
+}
+
+html,
+body {
+	height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+fieldset,
+input {
+	border: 0;
+	background: transparent;
+	outline: 0;
+}
+
+body {
+	min-width: $width;
+	font-family: $font-main;
+	@include text-style(14);
+	color: $primary;
+	font-weight: $font-weight-regular;
+}
+
+select {
+	appearance: none; // 기본 드롭다운 화살표 제거 (WebKit, Firefox)
+	-webkit-appearance: none; // WebKit 브라우저에서 기본 스타일 제거
+	-moz-appearance: none; // Firefox 브라우저에서 기본 스타일 제거
+	background: transparent; // 기본 배경 제거
+	border: 0; // 테두리 제거
+	padding: 0; // 기본 패딩 제거
+	margin: 0; // 기본 마진 제거
+	outline: none; // 포커스 시 아웃라인 제거
+}
